@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Shared|x64">
+      <Configuration>Debug Shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Shared|x64">
+      <Configuration>Release Shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B10C4DE-216B-422C-96B6-406EC8F419C5}</ProjectGuid>
+    <RootNamespace>NiProvider</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Shared|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Shared|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Shared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Shared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Shared|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Access\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Rdm\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D __EMA_STATIC_BUILD__%(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcprtd.lib;msvcrtd.lib;ws2_32.lib;wininet.lib;libema.lib;librsslVA.lib;librssl.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Libs\WIN_64_VS140\Debug_MDd;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Eta\Libs\WIN_64_VS140\Debug_MDd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>@echo on
+if not exist x64\Debug\EmaConfig.xml mklink /h x64\Debug\EmaConfig.xml EmaConfig.xml</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Shared|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Access\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Rdm\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcprtd.lib;msvcrtd.lib;ws2_32.lib;wininet.lib;libema.lib;librsslVA.lib;librssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Libs\WIN_64_VS140\Debug_MDd\Shared;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Eta\Libs\WIN_64_VS140\Debug_MDd\Shared;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>@echo on
+if not exist "x64\Debug Shared\EmaConfig.xml" mklink /h "x64\Debug Shared\EmaConfig.xml" EmaConfig.xml</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Access\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Rdm\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <BrowseInformation>true</BrowseInformation>
+      <DisableSpecificWarnings>4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/D __EMA_STATIC_BUILD__%(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>msvcprt.lib;msvcrt.lib;ws2_32.lib;wininet.lib;libema.lib;librsslVA.lib;librssl.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Libs\WIN_64_VS140\Release_MD;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Eta\Libs\WIN_64_VS140\Release_MD;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>@echo on
+if not exist x64\Release\EmaConfig.xml mklink /h x64\Release\EmaConfig.xml EmaConfig.xml</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Shared|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Access\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Rdm\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <BrowseInformation>true</BrowseInformation>
+      <DisableSpecificWarnings>4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>msvcprt.lib;msvcrt.lib;ws2_32.lib;wininet.lib;libema.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Libs\WIN_64_VS140\Release_MD\Shared;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>@echo on
+if not exist "x64\Release Shared\EmaConfig.xml" mklink /h "x64\Release Shared\EmaConfig.xml" EmaConfig.xml</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="NiProvider.cpp" />
+    <ClCompile Include="SymbolListMapEntry.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NiProvider.h" />
+    <ClInclude Include="SymbolListMapEntry.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
