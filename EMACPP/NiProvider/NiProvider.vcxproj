@@ -79,14 +79,14 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Access\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Rdm\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(EMAInstall)\Cpp-C\Ema\Src\Access\Include;$(EMAInstall)\Cpp-C\Ema\Src\Rdm\Include;$(EMAInstall)\Cpp-C\Ema\Src\Include;$(EMAInstall)\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/D __EMA_STATIC_BUILD__%(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcprtd.lib;msvcrtd.lib;ws2_32.lib;wininet.lib;libema.lib;librsslVA.lib;librssl.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Libs\WIN_64_VS140\Debug_MDd;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Eta\Libs\WIN_64_VS140\Debug_MDd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(EMAInstall)\Cpp-C\Ema\Libs\WIN_64_VS140\Debug_MDd;$(EMAInstall)\Cpp-C\Eta\Libs\WIN_64_VS140\Debug_MDd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>@echo on
@@ -98,14 +98,14 @@ if not exist x64\Debug\EmaConfig.xml mklink /h x64\Debug\EmaConfig.xml EmaConfig
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Access\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Rdm\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(EMAInstall)\Cpp-C\Ema\Src\Access\Include;$(EMAInstall)\Cpp-C\Ema\Src\Rdm\Include;$(EMAInstall)\Cpp-C\Ema\Src\Include;$(EMAInstall)\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcprtd.lib;msvcrtd.lib;ws2_32.lib;wininet.lib;libema.lib;librsslVA.lib;librssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Libs\WIN_64_VS140\Debug_MDd\Shared;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Eta\Libs\WIN_64_VS140\Debug_MDd\Shared;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(EMAInstall)\Cpp-C\Ema\Libs\WIN_64_VS140\Debug_MDd\Shared;$(EMAInstall)\Cpp-C\Eta\Libs\WIN_64_VS140\Debug_MDd\Shared;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>@echo on
@@ -121,7 +121,7 @@ if not exist "x64\Debug Shared\EmaConfig.xml" mklink /h "x64\Debug Shared\EmaCon
       <SDLCheck>
       </SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Access\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Rdm\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(EMAInstall)\Cpp-C\Ema\Src\Access\Include;$(EMAInstall)\Cpp-C\Ema\Src\Rdm\Include;$(EMAInstall)\Cpp-C\Ema\Src\Include;$(EMAInstall)\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -135,7 +135,7 @@ if not exist "x64\Debug Shared\EmaConfig.xml" mklink /h "x64\Debug Shared\EmaCon
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>msvcprt.lib;msvcrt.lib;ws2_32.lib;wininet.lib;libema.lib;librsslVA.lib;librssl.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Libs\WIN_64_VS140\Release_MD;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Eta\Libs\WIN_64_VS140\Release_MD;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(EMAInstall)\Cpp-C\Ema\Libs\WIN_64_VS140\Release_MD;$(EMAInstall)\Cpp-C\Eta\Libs\WIN_64_VS140\Release_MD;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -156,7 +156,7 @@ if not exist x64\Release\EmaConfig.xml mklink /h x64\Release\EmaConfig.xml EmaCo
       <SDLCheck>
       </SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Access\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Rdm\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src\Include;C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(EMAInstall)\Cpp-C\Ema\Src\Access\Include;$(EMAInstall)\Cpp-C\Ema\Src\Rdm\Include;$(EMAInstall)\Cpp-C\Ema\Src\Include;$(EMAInstall)\Cpp-C\Ema\Src</AdditionalIncludeDirectories>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -170,7 +170,7 @@ if not exist x64\Release\EmaConfig.xml mklink /h x64\Release\EmaConfig.xml EmaCo
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>msvcprt.lib;msvcrt.lib;ws2_32.lib;wininet.lib;libema.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\u8015664\Downloads\Elektron-SDK1.2.0.win\setup\Elektron-SDK1.2.0.win.rrg\Elektron-SDK1.2.0.win.rrg\Cpp-C\Ema\Libs\WIN_64_VS140\Release_MD\Shared;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(EMAInstall)\Cpp-C\Ema\Libs\WIN_64_VS140\Release_MD\Shared;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <SubSystem>Console</SubSystem>
     </Link>
