@@ -1,6 +1,6 @@
 #include "SymbolListMapEntry.h"
 
-using namespace thomsonreuters::ema::access;
+using namespace refinitiv::ema::access;
 
 //For ADD action
 //Set PROD_PERM and PROV_SYMB according to the input values
